@@ -1,7 +1,7 @@
-if [ ! -f /var/lib/unifi-video/system.properties ]; then
+if [ ! -f /usr/lib/unifi-video/system.properties ]; then
         echo ""
         echo "System Properties NOT found - creating new install"
-        cp -R /tmp/unifi-video/* /var/lib/unifi-video/ 
+        cp -R /tmp/unifi-video/* /usr/lib/unifi-video/ 
         echo ""
 fi
 
