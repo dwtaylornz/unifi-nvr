@@ -10,6 +10,12 @@ wget -q -O unifi-video.deb https://dl.ubnt.com/firmwares/ufv/v3.8.0/unifi-video.
 dpkg -i unifi-video.deb
 apt-get -f install -y
 
+# start and stop service
+service mongodb start
+service unifi-video start
+service unifi-video stop 
+service mongodb stop 
+
 # create copy of db after initial install
 mkdir /tmp/unifi-video
 cp -R /var/lib/unifi-video/* /tmp/unifi-video
