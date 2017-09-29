@@ -12,7 +12,7 @@ RUN chmod +x /start_nvr.sh
 # Volumes
 # VOLUME /usr/lib/unifi-video
 # VOLUME /var/lib/unifi-video
-# VOLUME /var/log/unifi-video
+VOLUME /var/log/unifi-video
 
 # Ports
 EXPOSE 7442 7443 7445 7446 7447 7080 6666
