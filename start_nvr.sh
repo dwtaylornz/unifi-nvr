@@ -1,3 +1,4 @@
+# check if clean install - if so popluate directory with required files 
 if [ ! -f /var/lib/unifi-video/system.properties ]; then
         echo ""
         echo "System Properties file NOT found - creating new install"
