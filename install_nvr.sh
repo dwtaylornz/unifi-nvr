@@ -13,3 +13,6 @@ apt-get -f install -y
 # create copy of db after initial install
 mkdir /tmp/unifi-video
 cp -R /var/lib/unifi-video/* /tmp/unifi-video
+
+#clean up
+rm unifi-video.deb
