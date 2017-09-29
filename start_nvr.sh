@@ -8,6 +8,6 @@ fi
 # chown -R unifi-video:unifi-video /var/lib/unifi-video
 # chown root:root /var/lib/unifi-video/videos
 
-service mongodb start
+# service mongodb start
 service unifi-video start
 tail -F /var/log/unifi-video/server.log
