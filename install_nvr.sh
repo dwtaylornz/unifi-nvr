@@ -7,5 +7,8 @@ apt-get -f install -y
 mkdir /tmp/unifi-video
 cp -R /var/lib/unifi-video/* /tmp/unifi-video
 
+# set start_nvr.sh executable 
+chmod +x /start_nvr.sh
+
 #clean up
 rm unifi-video.deb
