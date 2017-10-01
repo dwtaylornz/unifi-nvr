@@ -7,13 +7,13 @@ RUN apt-get update && apt-get install -y \
   apt-utils \ 
   openjdk-8-jre-headless
 
+# Add NVR Start-up
+ADD start_nvr.sh /
+# RUN chmod +x /start_nvr.sh
+
 # Install NVR
 ADD install_nvr.sh /
 RUN bash /install_nvr.sh
-
-# Add NVR Start-up
-ADD start_nvr.sh /
-RUN chmod +x /start_nvr.sh
 
 # Volumes
 # VOLUME /usr/lib/unifi-video
