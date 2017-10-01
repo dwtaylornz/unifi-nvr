@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 MAINTAINER dwtaylornz@gmail.com
 
 # Install Pre-reqs
