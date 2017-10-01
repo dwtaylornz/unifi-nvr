@@ -1,6 +1,12 @@
 FROM ubuntu
 MAINTAINER dwtaylornz@gmail.com
 
+# Install Pre-reqs
+RUN apt-get update && apt-get install -y \
+  wget \
+  apt-utils \ 
+  openjdk-8-jre-headless
+
 # Install NVR
 ADD install_nvr.sh /
 RUN bash /install_nvr.sh
