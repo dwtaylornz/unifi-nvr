@@ -1,10 +1,10 @@
-# unifi-nvr
-Ubiquiti UniFi-Video-Controller (NVR)
+# Ubiquiti UniFi-Video-Controller (NVR)
 
 # Setup
 This container requires the following two persistant data directories mapped;
 
 /var/lib/unifi-video/ -> your host "data" location
+
 /var/log/unifi-video/ -> your host "log" location
 
 # Troubleshooting
