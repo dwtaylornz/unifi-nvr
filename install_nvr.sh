@@ -5,9 +5,9 @@ dpkg -i unifi-video.deb
 apt-get -f install -y
 
 # remove symbolic links 
-cd /usr/lib/unifi-video
-rm data 
-rm logs 
+#cd /usr/lib/unifi-video
+#rm data 
+#rm logs 
 
 # set start_nvr.sh executable 
 chmod +x /start_nvr.sh
