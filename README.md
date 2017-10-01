@@ -1,4 +1,5 @@
 # Ubiquiti UniFi-Video-Controller (NVR)
+Ubuntu 16.04, UniFi-Video-Controller 3.80
 
 # Setup
 This container requires the following two persistant data directories mapped;
