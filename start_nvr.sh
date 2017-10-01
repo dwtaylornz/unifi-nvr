@@ -15,8 +15,5 @@ fi
 
 echo "" 
 
-# service mongodb start
-# echo "Sleeping for 30 seconds..." 
-# sleep 30
 service unifi-video start
 tail -F /var/log/unifi-video/server.log
