@@ -4,9 +4,10 @@ wget -q -O unifi-video.deb https://dl.ubnt.com/firmwares/ufv/v3.8.0/unifi-video.
 dpkg -i unifi-video.deb
 apt-get -f install -y
 
-# create copy of db after initial install
-# mkdir /tmp/unifi-video
-# cp -R /var/lib/unifi-video/* /tmp/unifi-video
+# remove symbolic links 
+cd /usr/lib/unifi-video
+rm data 
+rm logs 
 
 # set start_nvr.sh executable 
 chmod +x /start_nvr.sh
