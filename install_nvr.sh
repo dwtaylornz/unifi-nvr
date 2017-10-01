@@ -4,8 +4,8 @@ dpkg -i unifi-video.deb
 apt-get -f install -y
 
 # create copy of db after initial install
-mkdir /tmp/unifi-video
-cp -R /var/lib/unifi-video/* /tmp/unifi-video
+# mkdir /tmp/unifi-video
+# cp -R /var/lib/unifi-video/* /tmp/unifi-video
 
 # set start_nvr.sh executable 
 chmod +x /start_nvr.sh
