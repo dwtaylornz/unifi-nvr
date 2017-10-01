@@ -1,19 +1,19 @@
 echo "--- START NVR ---" 
 
 # check if clean install - if so popluate directory with required files 
-if [ ! -f /usr/lib/unifi-video/data/system.properties ]; then
+if [ ! -f /var/lib/unifi-video/system.properties ]; then
         echo "Data directory contains zero files - setting permissions"
-        chown -R unifi-video:unifi-video /usr/lib/unifi-video/data
+        chown -R unifi-video:unifi-video /var/lib/unifi-video
 fi
 
 #check if logs directory has anything in it? - if not set permissions on log dir 
-if [ ! -f /usr/lib/unifi-video/logs/server.log ]; then
+if [ ! -f /var/log/unifi-video/server.log ]; then
         echo "Logs directory contain zero files - setting permissions"
-        chown -R unifi-video:unifi-video /usr/lib/unifi-video/logs    
+        chown -R unifi-video:unifi-video /var/log/unifi-video    
 fi
 
 echo "" 
 
 # service mongodb start
 # service unifi-video start
-tail -F /usr/lib/unifi-video/logs/server.log
+tail -F /var/log/unifi-video/server.log
