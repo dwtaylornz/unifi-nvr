@@ -9,12 +9,12 @@ fi
 
 #check if logs directory has anything in it? - if not set permissions on log dir 
 if [ ! -f /var/log/unifi-video/server.log ]; then
-        echo "Logs directory contain zero files - setting permissions"
+        echo "Logs directory contains zero files - setting permissions"
         chown -R unifi-video:unifi-video /var/log/unifi-video    
 fi
 
 echo "" 
 
 # service mongodb start
-# service unifi-video start
+service unifi-video start
 tail -F /var/log/unifi-video/server.log
