@@ -15,8 +15,8 @@ ADD install_nvr.sh /
 RUN bash /install_nvr.sh
 
 # Volumes
-VOLUME /usr/lib/unifi-video/data
-VOLUME /usr/lib/unifi-video/logs
+VOLUME /var/lib/unifi-video  
+VOLUME /var/log/unifi-video
 
 # Ports
 EXPOSE 7442 7443 7445 7446 7447 7080 6666
