@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.04
 MAINTAINER dwtaylornz@gmail.com
 
 # Install Pre-reqs
@@ -9,14 +9,12 @@ RUN apt-get update && apt-get install -y \
 
 # Add NVR Start-up
 ADD start_nvr.sh /
-# RUN chmod +x /start_nvr.sh
 
 # Install NVR
 ADD install_nvr.sh /
 RUN bash /install_nvr.sh
 
 # Volumes
-# VOLUME /usr/lib/unifi-video
 VOLUME /var/lib/unifi-video
 VOLUME /var/log/unifi-video
 
