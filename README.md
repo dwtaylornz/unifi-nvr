@@ -9,7 +9,7 @@ This container requires the following two persistant data directories mapped;
 
 # Troubleshooting
 
-UNRAID - If you have issue with MongoDB continually restarting please check your data mapping. I have seen issues where user shares (i.e. appdata) do not work correctly. Please try mapping direct to a single disk or to cache drive to ensure smooth operation.
+UNRAID - If you have issue with MongoDB continually restarting please check your data mapping. I have seen issues where user shares do not work correctly. Please try mapping direct to a single disk or to cache drive to ensure smooth operation.
 
 i.e. instead of /mnt/user/usershare/nvr/data
 
