@@ -17,7 +17,7 @@ RUN bash /install_nvr.sh
 
 # Volumes
 # VOLUME /usr/lib/unifi-video
-# VOLUME /var/lib/unifi-video
+VOLUME /var/lib/unifi-video
 VOLUME /var/log/unifi-video
 
 # Ports
