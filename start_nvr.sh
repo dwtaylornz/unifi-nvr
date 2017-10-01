@@ -1,3 +1,4 @@
+echo "" 
 echo "--- START NVR ---" 
 
 # check if clean install - if so popluate directory with required files 
