@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM gliderlabs/alpine:3.4
 MAINTAINER dwtaylornz@gmail.com
 
 # Install Pre-reqs
