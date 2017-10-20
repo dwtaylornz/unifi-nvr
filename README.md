@@ -1,5 +1,5 @@
 # Ubiquiti UniFi-Video-Controller (NVR) -- Docker Container
-Ubuntu 16.04, UniFi-Video-Controller 3.8.1
+Ubuntu 16.04, UniFi-Video-Controller 3.8.2
 
 # Setup
 This container requires the following two persistant data directories mapped;
