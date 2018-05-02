@@ -1,13 +1,12 @@
 echo "" 
 echo "--- START NVR ---" 
 
-# check if clean install - if so popluate directory with required files 
+# check if clean install (no files) - if so set permissions 
 if [ ! -f /var/lib/unifi-video/system.properties ]; then
         echo "Data directory contains zero files - setting permissions"
         chown -R unifi-video:unifi-video /var/lib/unifi-video
 fi
 
-#check if logs directory has anything in it? - if not set permissions on log dir 
 if [ ! -f /var/log/unifi-video/server.log ]; then
         echo "Logs directory contains zero files - setting permissions"
         chown -R unifi-video:unifi-video /var/log/unifi-video    
