@@ -1,12 +1,12 @@
 # Ubiquiti UniFi-Video-Controller (NVR) -- Docker Container
-Ubuntu 16.04, UniFi-Video-Controller 3.9.3
+Ubuntu 16.04, UniFi-Video-Controller 3.9.6
 
 # Setup
 This container requires the following two persistant data directories mapped;
 
-/var/lib/unifi-video/ -> your host "data" location
+/var/lib/unifi-video -> your host "data" location
 
-/var/log/unifi-video/ -> your host "log" location
+/var/log/unifi-video -> your host "log" location
 
 # Troubleshooting
 
