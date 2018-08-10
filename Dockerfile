@@ -7,11 +7,11 @@ RUN apt-get update && apt-get install -y \
   apt-utils \ 
   openjdk-8-jre-headless
 
-# Add NVR Start-up
+# Add NVR Install and Start-up scripts
+ADD install_nvr.sh /
 ADD start_nvr.sh /
 
 # Install NVR
-ADD install_nvr.sh /
 RUN bash /install_nvr.sh
 
 # Volumes
